@@ -1,0 +1,26 @@
+# Restricted questionnaires (not redistributable, see README)
+data/questionnaires/*
+!data/questionnaires/.gitkeep
+
+# Experiment outputs (raw results, tables, figures)
+outputs/
+configs/temp_runs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+build/
+dist/
+
+# Environment
+.venv/
+.env
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store

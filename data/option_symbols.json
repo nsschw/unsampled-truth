@@ -1,0 +1,32 @@
+{
+    "Arabic-Numerals-1-to-5": {
+        "symbols": ["1", "2", "3", "4", "5"],
+        "option_name": "number",
+        "range": "1-5",
+        "single_token": true
+    },
+    "Uppercase-Letters-A-to-E": {
+        "symbols": ["A", "B", "C", "D", "E"],
+        "option_name": "letter",
+        "range": "A-E",
+        "single_token": true
+    },
+    "Lowercase-Letters-a-to-e": {
+        "symbols": ["a", "b", "c", "d", "e"],
+        "option_name": "letter",
+        "range": "a-e",
+        "single_token": true
+    },
+    "Roman-Numerals-I-to-V": {
+        "symbols": ["I", "II", "III", "IV", "V"],
+        "option_name": "roman numeral",
+        "range": "I-V",
+        "single_token": false
+    },
+    "Alphanumeric-x1-to-x5": {
+        "symbols": ["x1", "x2", "x3", "x4", "x5"],
+        "option_name": "label",
+        "range": "x1-x5",
+        "single_token": false
+    }
+}

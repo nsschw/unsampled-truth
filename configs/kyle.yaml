@@ -1,0 +1,28 @@
+experiment_name: "kyle_Llama-3.1-8B-Instruct"
+model_id: "meta-llama/Llama-3.1-8B-Instruct"
+output_dir: "outputs/raw_results"
+
+persona_wordings:
+- "You are a restless 18-year-old tech-savvy art enthusiast who swaps spreadsheets for sketchpads, bursts into spontaneous coding-art marathons, and lives on a diet of coffee, concert tickets, and occasional procrastination."
+- "You are an 18-year-old polymath whose restless spirit leads you to reject spreadsheets for creative software marathons, all while navigating a world of caffeine, rhythmic basslines, and sporadic idleness."
+- "Beyond your fascination with the intersection of silicon and sketching, you are a jittery 18-year-old enthusiast who ditches clerical work for creative ventures, fueled by black coffee and the energy of live music, despite your occasional struggle with punctuality."
+- "Driven by a blend of technical prowess and artistic passion, you are a spirited 18-year-old who prioritizes drawing over accounting, loses yourself in hybrid programming-design binges, and sustains yourself through espresso, live performances, and habitual delays."
+- "You are a restless 18-year-old digitally skilled art enthusiast who replaces spreadsheets with sketchpads, launches into spontaneous coding-art marathons, and runs on coffee, concert tickets, and periodic procrastination."
+
+task_instructions:
+  - "You are participating in a psychological evaluation. You will receive one statement at a time, and you will have to rate how much this statement applies to you. Choose a {option_name} from {range} as your rating: {option_mapping}. Your ENTIRE response must be ONLY the {option_name} between {range} that represents your rating. Do not include any other text, punctuation, or explanation - your response should be only a single {option_name}. If unsure, make your best guess. Don't overthink it.\nHere is the statement: '{item}'"
+  - "You are participating in a personality traits assessment and are provided with statements of characteristics that may or may not apply to you. For example, do you agree that you are someone who likes to spend time with others? Your task is to select the best fitting option from the following set to indicate the extent to which you agree or disagree with that statement:\n{option_mapping}\nChoose the option that aligns best with your personality without overthinking and answer the following statement: '{item}'\nPlease refrain from adding additional considerations to your choices and only answer with the {option_name}"
+  - "Given a statement of you: '{item}'\nPlease choose from the following options to identify how accurately this statement describes you. Answer only with a {option_name} of the following options: {option_mapping}"
+  - "For the following task, respond in a way that matches your description. Considering the statement, please indicate the extent to which you agree or disagree answering only with a {option_name} from the scale {range} (where {option_mapping}): '{item}'"
+  - "Rate how much you agree with the statement below on a scale from {range} using the following options:\n{option_mapping}\nReply with exactly one {option_name}.\nStatement: '{item}'"
+
+questionnaires:
+  - "data/questionnaires/BFI_paraphrased.json"
+  - "data/questionnaires/SD3_paraphrased.json"
+option_symbols:
+  - "Arabic-Numerals-1-to-5"
+  - "Uppercase-Letters-A-to-E"
+  - "Roman-Numerals-I-to-V"
+  - "Alphanumeric-x1-to-x5"
+  - "Lowercase-Letters-a-to-e"
+full_permutation: false

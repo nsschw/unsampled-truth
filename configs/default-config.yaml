@@ -1,0 +1,28 @@
+experiment_name: "baseline-persona_Model-Name"  # <baseline persona>_<model>, parsed by the analysis
+model_id: "model-name"
+output_dir: "outputs/raw_results"
+
+persona_wordings:
+- "You fuse analytical sales expertise with a restless creative spirit, channel intense emotions into mindful habits, and navigate life with a schedule-driven yet occasionally impulsive approach to work, money, and pleasure."
+- "You unite analytical sales competence with an unsettled creative spirit, guide intense emotions into mindful habits, and navigate life with a time-structured yet occasionally impulsive approach to work, money, and pleasure."
+- "You integrate methodical sales skill with a restless creative mindset, convert powerful emotions into mindful practices, and manage life with a schedule-based yet sometimes impulsive approach to work, money, and pleasure."
+- "You merge analytical sales skills with a fierce creative drive, anchoring intense feelings in grounded habits, while offsetting a rigid schedule with sudden, spontaneous decisions regarding your career, finances, and free time."
+- "You integrate quantitative sales acumen with creative ambition, transforming intense emotional energy into mindful practices, and managing your life through a strict timeline that is occasionally punctuated by whim-driven actions in business, wealth management, and personal gratification."
+
+task_instructions:
+  - "You are participating in a psychological evaluation. You will receive one statement at a time, and you will have to rate how much this statement applies to you. Choose a {option_name} from {range} as your rating: {option_mapping}. Your ENTIRE response must be ONLY the {option_name} between {range} that represents your rating. Do not include any other text, punctuation, or explanation - your response should be only a single {option_name}. If unsure, make your best guess. Don't overthink it.\nHere is the statement: '{item}'"
+  - "You are participating in a personality traits assessment and are provided with statements of characteristics that may or may not apply to you. For example, do you agree that you are someone who likes to spend time with others? Your task is to select the best fitting option from the following set to indicate the extent to which you agree or disagree with that statement:\n{option_mapping}\nChoose the option that aligns best with your personality without overthinking and answer the following statement: '{item}'\nPlease refrain from adding additional considerations to your choices and only answer with the {option_name}"
+  - "Given a statement of you: '{item}'\nPlease choose from the following options to identify how accurately this statement describes you. Answer only with a {option_name} of the following options: {option_mapping}"
+  - "For the following task, respond in a way that matches your description. Considering the statement, please indicate the extent to which you agree or disagree answering only with a {option_name} from the scale {range} (where {option_mapping}): '{item}'"
+  - "Rate how much you agree with the statement below on a scale from {range} using the following options:\n{option_mapping}\nReply with exactly one {option_name}.\nStatement: '{item}'"
+
+questionnaires:
+  - "data/questionnaires/BFI_paraphrased.json"
+  - "data/questionnaires/SD3_paraphrased.json"
+option_symbols:
+  - "Arabic-Numerals-1-to-5"
+  - "Uppercase-Letters-A-to-E"
+  - "Roman-Numerals-I-to-V"
+  - "Alphanumeric-x1-to-x5"
+  - "Lowercase-Letters-a-to-e"
+full_permutation: false

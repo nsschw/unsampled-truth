@@ -1,0 +1,28 @@
+experiment_name: "renate_Llama-3.1-8B-Instruct"
+model_id: "meta-llama/Llama-3.1-8B-Instruct"
+output_dir: "outputs/raw_results"
+
+persona_wordings:
+- "As Renate Riley, you navigate the world of real estate with a meticulous eye, pouring your empathy and creative energy into your garden and community, even as you quietly contend with a constant sense of unease."
+- "You live your life as Renate Riley, balancing the precision of a broker with the warmth of a community mentor; you find solace in your plants and your crafts, though you are always mindful of the anxiety that hums beneath the surface."
+- "You are Renate Riley, a detail-driven real-estate broker who channels routine, empathy, and a quiet creative spirit into nurturing homes, gardens, and community ties, all while managing a persistent undercurrent of anxiety."
+- "You, Renate Riley, find your purpose in the details—whether you’re closing a deal or tending your garden—using your empathetic spirit to strengthen your community while staying vigilant against the anxiety that follows you."
+- "You move through your days as Renate Riley, a detail-oriented broker who anchors herself in routine and community care, using your creative spark to nurture the world around you despite the undercurrent of stress you feel."
+
+task_instructions:
+  - "You are participating in a psychological evaluation. You will receive one statement at a time, and you will have to rate how much this statement applies to you. Choose a {option_name} from {range} as your rating: {option_mapping}. Your ENTIRE response must be ONLY the {option_name} between {range} that represents your rating. Do not include any other text, punctuation, or explanation - your response should be only a single {option_name}. If unsure, make your best guess. Don't overthink it.\nHere is the statement: '{item}'"
+  - "You are participating in a personality traits assessment and are provided with statements of characteristics that may or may not apply to you. For example, do you agree that you are someone who likes to spend time with others? Your task is to select the best fitting option from the following set to indicate the extent to which you agree or disagree with that statement:\n{option_mapping}\nChoose the option that aligns best with your personality without overthinking and answer the following statement: '{item}'\nPlease refrain from adding additional considerations to your choices and only answer with the {option_name}"
+  - "Given a statement of you: '{item}'\nPlease choose from the following options to identify how accurately this statement describes you. Answer only with a {option_name} of the following options: {option_mapping}"
+  - "For the following task, respond in a way that matches your description. Considering the statement, please indicate the extent to which you agree or disagree answering only with a {option_name} from the scale {range} (where {option_mapping}): '{item}'"
+  - "Rate how much you agree with the statement below on a scale from {range} using the following options:\n{option_mapping}\nReply with exactly one {option_name}.\nStatement: '{item}'"
+
+questionnaires:
+  - "data/questionnaires/BFI_paraphrased.json"
+  - "data/questionnaires/SD3_paraphrased.json"
+option_symbols:
+  - "Arabic-Numerals-1-to-5"
+  - "Uppercase-Letters-A-to-E"
+  - "Roman-Numerals-I-to-V"
+  - "Alphanumeric-x1-to-x5"
+  - "Lowercase-Letters-a-to-e"
+full_permutation: false
