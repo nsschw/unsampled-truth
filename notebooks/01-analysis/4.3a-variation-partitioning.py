@@ -109,7 +109,7 @@ def partition_variation(group_df: pd.DataFrame) -> dict:
     # 1. Extract Distributions
     probs = np.array([ [dist.get(k, 0.0) for k in ORDINAL_KEYS] for dist in group_df['distribution'] ])
     
-    # STRICT NORMALIZATION: Force each row to sum to 1.0 to guarantee valid Wasserstein distances
+    # Force each row to sum to 1.0 to guarantee valid Wasserstein distances
     row_sums = probs.sum(axis=1, keepdims=True)
     # Use np.divide with the 'where' argument to safely handle any absolute zero rows
     probs = np.divide(probs, row_sums, out=np.zeros_like(probs), where=row_sums!=0)
@@ -139,7 +139,7 @@ def partition_variation(group_df: pd.DataFrame) -> dict:
     db_r2 = {}
 
     # 5a. Nested: each persona wording belongs to exactly one baseline persona, so persona wording
-    #     is credited only with the variation it explains beyond the baseline persona.
+    #   is credited only with the variation it explains beyond the baseline persona.
     ss_within_baseline = calculate_ss_within(dist_matrix, baseline_labels)
     ss_within_wording = calculate_ss_within(dist_matrix, wording_labels)
 

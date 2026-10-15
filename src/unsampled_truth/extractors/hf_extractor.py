@@ -101,6 +101,6 @@ class HuggingFaceExtractor(ProbabilityExtractor):
             results[option] = prob
             option_prob_sum += prob
 
-        # 7. Off-option mass is simply whatever mass wasn't assigned to your explicit options
+        # 7. Off-option mass is simply whatever mass wasn't assigned to explicit options
         results["Off-Option-Mass"] = max(0.0, 1.0 - option_prob_sum)
         return results
