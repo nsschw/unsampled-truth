@@ -48,6 +48,8 @@ Results are written to `outputs/raw_results/<baseline persona>_<model>_raw.jsonl
 
 ## Acknowledgements
 
-- **Data:** [Nemotron-Personas-USA](https://huggingface.co/datasets/nvidia/Nemotron-Personas-USA) (Meyer & Corneil, 2025) for the baseline personas; the Big Five Inventory (John & Srivastava, 1999) and the Short Dark Triad (Jones & Paulhus, 2014); item paraphrases from Tosato et al. (2026); option symbol sets following Yang et al. (2025). Task instructions are adapted from Tosato et al. (2026), La Cava & Tagarelli (2025), Lee et al. (2025) and Zou et al. (2025).
-- **Software:** [PyTorch](https://pytorch.org), [Transformers](https://github.com/huggingface/transformers), [NumPy](https://numpy.org), [SciPy](https://scipy.org), [pandas](https://pandas.pydata.org), [matplotlib](https://matplotlib.org) and [seaborn](https://seaborn.pydata.org).
-- **Funding:** This work was conducted within the [EVAS Research Cooperative](https://evas-research.github.io/) and supported by EMOSCI (DFG, project 569156112) and KuKI (BMFTR, project 16KIS2515).
+- **Data:** This repo contain data from [Nemotron-Personas-USA](https://huggingface.co/datasets/nvidia/Nemotron-Personas-USA) (Meyer & Corneil, 2025) for the baseline personas. Due to copyright limitations we don't include the Big Five Inventory and the Short Dark Triad items, as well as their paraphrases from the [PERSIST](https://github.com/tosatot/PERSIST) paper.
+
+- **Funding:** This work was supported by EMOSCI (DFG, project 569156112) and KuKI (BMFTR, project 16KIS2515).
+
+- **EVAS:** This work was conducted within the [EVAS Research Cooperative](https://evas-research.github.io/)
