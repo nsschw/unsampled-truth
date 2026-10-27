@@ -35,14 +35,24 @@ Results are written to `outputs/raw_results/<baseline persona>_<model>_raw.jsonl
 ## Citation
 
 ```bibtex
-@misc{schwager2026unsampled,
-  title         = {The Unsampled Truth: Quantifying Prompt Artifacts in LM Psychometrics},
-  author        = {Schwager, Nils and Hau, Christoph and M{\"u}nker, Simon and Rettinger, Achim},
-  year          = {2026},
-  eprint        = {2606.03357},
-  archivePrefix = {arXiv},
-  primaryClass  = {cs.CL},
-  url           = {https://arxiv.org/abs/2606.03357}
+@inproceedings{schwager-etal-2026-unsampled,
+    title = "The Unsampled Truth: Quantifying Prompt Artifacts in {LM} Psychometrics",
+    author = {Schwager, Nils  and
+      Hau, Christoph  and
+      M{\"u}nker, Simon  and
+      Rettinger, Achim},
+    editor = "Lee, Hung-Yi  and
+      Dev, Sunipa  and
+      Li, Jessy  and
+      Elliott, Desmond",
+    booktitle = "Findings of the {A}ssociation for {C}omputational {L}inguistics: {EMNLP} 2026",
+    month = oct,
+    year = "2026",
+    address = "Budapest, Hungary",
+    publisher = "Association for Computational Linguistics",
+    url = "https://aclanthology.org/2026.findings-emnlp.1009/",
+    pages = "21330--21341",
+    ISBN = "979-8-89176-462-0",
 }
 ```
 
